@@ -26,9 +26,17 @@ Libraries used: Numpy, Pandas, mpi4py, sklearn, sys, time(not necessary, just fo
 Example about how to install the library:
 ```bash
 pip3 install Numpy
+```
 
 ### How to use mpi4y
 
-
-
-## 感谢部分
+### Eviroment INFO
+10 general purpose CPU Nodes, each with (2) Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz (Intel Broadwell), 64GB RAM, and 1 TB of scratch space. (Total 320 threads across 10 nodes)
+ 
+2 CPU high memory nodes, each with (2) Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz (Intel Cascade Lake), 768GB RAM, and 14TB of local storage (RAID 1) for scratch/temp storage. (Total 144 threads across 2 nodes)
+ 
+4 GPU nodes with (2) Intel(R) Xeon(R) CPU E5-2687W @ 3.10GHz (Intel Sandy Bridge EP), 64GB RAM, 2x NVIDIA 2080Ti’s, and 1 TB of SSD scratch space. (Total 128 threads across 4 nodes).
+ 
+5 GPU nodes with (1) Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz (Intel Cascade Lake), 64GB RAM, 1x NVIDIA A5000, and 1TB of NVMe SSD scratch space (100 threads across 5 nodes).
+ 
+Summarizing, babbage is a 21 node cluster located in the library server room. It consists of 692 CPU threads, 2752GB of RAM, 13 GPUs, and approximately 80TB of centralized storage.
