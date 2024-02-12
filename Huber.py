@@ -31,8 +31,9 @@ def Huber(comm, rank, size):
 
     y_test_pre_list = []  # List to store predictions for the test dataset.
     error_model_list = []  # List to store model prediction errors.
+    iters = 100  # Define the number of bootstrap iterations.
 
-    for i in range(5):
+    for i in range(iters):
         # Perform bootstrapping: sample the training dataset with replacement.
         Train_sample = Train.sample(frac=1, replace=True)
         y_train_sample = Train_sample['fmv']
