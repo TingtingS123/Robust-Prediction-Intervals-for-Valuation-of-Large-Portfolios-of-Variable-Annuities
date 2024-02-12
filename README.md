@@ -28,6 +28,21 @@ pip3 install numpy
 
 ### How to use mpi4y
 
+Utilizing mpi4py for parallel processing of large datasets is crucial for enhancing computational efficiency and saving time. mpi4py is a Python library based on the Message Passing Interface (MPI) that enables programs to run in parallel across multiple processors. This parallel execution allows for the division of tasks across multiple computing nodes, accelerating the processing and analysis of data. 
+
+the following SBATCH directives are used to configure the job's resource requirements and runtime environment:
+
+#SBATCH --job-name=bootstrap assigns a unique name to the job for easier identification.
+#SBATCH --nodes=4 specifies the job will use four computing nodes.
+#SBATCH --ntasks=10 determines that the job will run ten tasks in parallel.
+#SBATCH --cpus-per-task=1 allocates one CPU per task, optimizing the distribution of computational workload.
+#SBATCH --time=12:00:00 limits the total runtime to 12 hours, ensuring the job completes within a reasonable timeframe.
+#SBATCH --partition=research assigns the job to a 'research' partition, which is a subset of the cluster tailored for research tasks.
+#SBATCH --output=%x.%j.out and #SBATCH --error=%x.%j.err direct the job's standard output and error messages to specific files, using the job name and job ID for file naming.
+
+These directives are essential for efficiently scheduling the parallel computation job on an HPC cluster, enabling the rapid and effective analysis of large datasets with mpi4py.
+
+
 
 
 ### Environment Infomation
