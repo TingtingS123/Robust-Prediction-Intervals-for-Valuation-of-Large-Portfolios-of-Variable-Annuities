@@ -16,9 +16,7 @@ module load gnu12
 module load openmpi4
 module load py3-mpi4py  # Python MPI support.
 module load py3-numpy  # For numerical computations.
-
 source ~/mypython/mypython/bin/activate  # Activates a Python virtual environment.
-
 module load cmake  # Loads the cmake module for build process management.
 
 mpiexec -n 10 python3 bootstrap_version1.py  # Executes the Python script in parallel using 10 tasks.
