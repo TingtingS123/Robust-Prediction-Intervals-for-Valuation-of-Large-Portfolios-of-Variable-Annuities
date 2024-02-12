@@ -12,25 +12,27 @@ Our findings show that the Gradient Boosting regression (GBR) model provides the
 
 Therefore, we recommend using the gradient boosting model with the bootstrap method to calculate the prediction interval of valuation for a large portfolio of variable annuity policies.
 
-
-
 ## Getting Started
-# 讲解一下为什么要用mpi4py
+
 
 ### Data load
 The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
 
-### Libraries used
-Libraries used: Numpy, Pandas, mpi4py, sklearn, sys, time(not necessary, just for recording the processing time), matplotlib.pyplot, scipy.stats, statsmodels.api,sys, statsmodels.regression.quantile_regression. 
+### Libraries Used
+Libraries used: Numpy, Pandas, mpi4py, sklearn, sys, time(not necessary, just for recording the processing time), matplotlib.pyplot, scipy.stats, statsmodels.api,sys, statsmodels.regression.quantile_regression, random. 
 
 Example about how to install the library:
 ```bash
-pip3 install Numpy
+pip3 install numpy
 ```
 
 ### How to use mpi4y
 
-### Eviroment INFO
+
+
+### Environment Infomation
+python version: 3.6.8
+
 10 general purpose CPU Nodes, each with (2) Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz (Intel Broadwell), 64GB RAM, and 1 TB of scratch space. (Total 320 threads across 10 nodes)
  
 2 CPU high memory nodes, each with (2) Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz (Intel Cascade Lake), 768GB RAM, and 14TB of local storage (RAID 1) for scratch/temp storage. (Total 144 threads across 2 nodes)
