@@ -28,7 +28,9 @@ def quantile(comm, rank, size):
     # Initialize lists to store predictions.
     y_test_pre_left = []
     y_test_pre_right = []
-    for i in range(3):  # Iterate three times for bootstrap sampling.
+    iters = 100  # Define the number of bootstrap iterations.
+
+    for i in range(iters):
         print(f'The rank {rank}, iteration {i}')
         # Sample the training data with replacement.
         Train_sample = Train.sample(frac=1, replace=True)
