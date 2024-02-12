@@ -31,11 +31,12 @@ def GBoost(comm,rank, size):
     print(rank)
     y_test_pre_list = []
     error_model_list = []
-    for i in range(2):
+    iters = 100 # repeat times 
+    for i in range(iters):
+        # shuffle the datasets 
         Train_sample = Train.sample(frac = 1, replace = True)
         y_train_sample = Train_sample['fmv']
         X_train_sample = Train_sample.drop(['fmv'],axis = 1)
-
         model = GradientBoostingRegressor()
         model.fit(X_train_sample,y_train_sample)
         y_train_sample_pre = model.predict(X_train_sample)
