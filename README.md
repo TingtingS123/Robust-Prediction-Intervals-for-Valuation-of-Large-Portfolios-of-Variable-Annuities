@@ -2,8 +2,6 @@
 
 In this article, we explored the generation of robust prediction intervals for variable annuity pricing using five distinct models enhanced by bootstrapping techniques. Our analysis revealed that the Gradient Boosting Regression model offers the most optimal balance between interval narrowness and coverage rate, making it the recommended approach for the accurate valuation of large variable annuity portfolios.
 
-Authors and contributors: Tingting Sun, Haoyuan Wang, Donglin Wang(Advisor).
-
 ## Description
 Valuation of large portfolios of variable annuities (VAs) is a well-researched area in actuarial science field. However, the study of producing reliable prediction intervals for prices has received comparatively less attention. Compared to point prediction, the prediction interval can calculate a reasonable price range of VAs and helps investors and insurance companies better manage risk in order to maintain profitability and sustainability. 
 
