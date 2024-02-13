@@ -19,4 +19,4 @@ module load py3-numpy  # For numerical computations.
 source ~/mypython/mypython/bin/activate  # Activates a Python virtual environment.
 module load cmake  # Loads the cmake module for build process management.
 
-mpiexec -n 10 python3 bootstrap_version1.py  # Executes the Python script in parallel using 10 tasks.
+mpiexec -n 10 python3 OLS.py  # Executes the Python script in parallel using 10 tasks. The number of bootstrap iterations is 100 for each task. There are 1000 iterations of bootstrap iterations in total.              l
