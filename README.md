@@ -14,6 +14,9 @@ Therefore, we recommend using the gradient boosting model with the bootstrap met
 
 ## Getting Started
 
+```bash
+python3 main.py
+```
 
 ### Data load
 The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
