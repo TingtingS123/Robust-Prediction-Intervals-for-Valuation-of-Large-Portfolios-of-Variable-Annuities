@@ -31,9 +31,7 @@ def getdensity(model, kde_x):
     density = stats.gaussian_kde(model)
     return density(kde_x)
 
-
-
-if __name__ == "__main__":
+def main():
     rate_list = [10, 20, 30]  # Define different rates to iterate over.
     itera = [1000, 2000, 3000, 5000]  # Define different iteration counts.
     letter = ["(A)", "(B)", "(C)", "(D)"]  # Labels for subplots.
@@ -95,3 +93,8 @@ if __name__ == "__main__":
                 ax[i, j].set_xlabel("{} R = {}".format(letter[h], itera[h]))
                 
                 # Perform Tukey's HSD test and print results
+
+    
+
+if __name__ == "__main__":
+    main()
