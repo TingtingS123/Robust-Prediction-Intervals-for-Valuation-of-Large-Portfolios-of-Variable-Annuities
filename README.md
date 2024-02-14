@@ -16,11 +16,11 @@ Therefore, we recommend using the gradient boosting model with the bootstrap met
 The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
 
 ### Libraries Used
-Libraries used: Numpy, Pandas, mpi4py, sklearn, sys, time(not necessary, just for recording the processing time), matplotlib.pyplot, scipy.stats, statsmodels.api,sys, statsmodels.regression.quantile_regression, random. 
+Libraries used: Numpy, Pandas, mpi4py, sklearn, matplotlib, scipy, statsmodels, random. 
 
-Example about how to install the library:
+How to install the libraries used:
 ```bash
-pip3 install numpy
+pip install -r requirements.txt
 ```
 
 ### How to employ mpi4py for executing programs in parallel
