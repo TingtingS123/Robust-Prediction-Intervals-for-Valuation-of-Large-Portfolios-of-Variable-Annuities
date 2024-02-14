@@ -16,7 +16,7 @@ Therefore, we recommend using the gradient boosting model with the bootstrap met
 The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
 
 ### Libraries Used
-Libraries used: Numpy, Pandas, mpi4py, sklearn, matplotlib, scipy, statsmodels, random. 
+Libraries used: Numpy, Pandas, mpi4py, sklearn, matplotlib, scipy, statsmodels.
 
 How to install the libraries used:
 ```bash
