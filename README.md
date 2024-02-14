@@ -44,6 +44,8 @@ sbatch run_mpi4.sh
 ```
 ###
 
+In the article, the mpi4py package is utilized to perform parallel computing. Specifically, when running 1000 bootstrap models, the process involves distributing the data across 10 nodes, with each node responsible for executing 100 iterations of the model. This distribution is aimed at leveraging parallel processing capabilities to enhance computational efficiency. Once each node has completed its designated computations, the results are then aggregated back to a master node. This aggregation is a critical step, as it compiles the outcomes from all nodes into a comprehensive result, facilitating further analysis or decision-making based on the collective output of the 1000 bootstrap models. Through this method, the computational workload is effectively divided among multiple processors, significantly reducing the overall execution time compared to sequential processing.
+
 
 ### Environment Infomation
 python version: 3.6.8
