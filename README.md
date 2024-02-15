@@ -13,7 +13,7 @@ Therefore, we recommend using the gradient boosting model with the bootstrap met
 ## Getting Started
 
 ### Data load
-The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
+The synthetic dataset used in this study was generated following the methodology outlined in the works by Gan et al.[1][2]. The details of the dataset used in this paper can be found at the following URL: https://www2.math.uconn.edu/~gan/software.html
 
 ### Libraries Used
 Libraries used: Numpy, Pandas, mpi4py, sklearn, matplotlib, scipy, statsmodels.
@@ -59,3 +59,8 @@ python version: 3.6.8
 5 GPU nodes with (1) Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz (Intel Cascade Lake), 64GB RAM, 1x NVIDIA A5000, and 1TB of NVMe SSD scratch space (100 threads across 5 nodes).
  
 Summarizing, babbage is a 21 node cluster located in the library server room. It consists of 692 CPU threads, 2752GB of RAM, 13 GPUs, and approximately 80TB of centralized storage.
+
+###Reference
+[1] Gan, G., & Valdez, E. A. (2017). Valuation of large variable annuity portfolios: Monte Carlo simulation and synthetic datasets. Dependence Modeling, 5(1), 354-374.
+[2] Gan, G., & Valdez, E. A. (2018). Nested stochastic valuation of large variable annuity portfolios: Monte Carlo simulation and synthetic datasets. Data, 3(3), 31.
+
