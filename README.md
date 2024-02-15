@@ -61,6 +61,7 @@ python version: 3.6.8
 Summarizing, babbage is a 21 node cluster located in the library server room. It consists of 692 CPU threads, 2752GB of RAM, 13 GPUs, and approximately 80TB of centralized storage.
 
 ### Reference
-[1] Gan, G., & Valdez, E. A. (2017). Valuation of large variable annuity portfolios: Monte Carlo simulation and synthetic datasets. Dependence Modeling, 5(1), 354-374.\\
+[1] Gan, G., & Valdez, E. A. (2017). Valuation of large variable annuity portfolios: Monte Carlo simulation and synthetic datasets. Dependence Modeling, 5(1), 354-374.
+
 [2] Gan, G., & Valdez, E. A. (2018). Nested stochastic valuation of large variable annuity portfolios: Monte Carlo simulation and synthetic datasets. Data, 3(3), 31.
 
